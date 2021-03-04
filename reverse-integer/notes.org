@@ -1,0 +1,6 @@
+#+TITLE: Reverse Integer Notes
+- Return value will overflow if (current return value)/10 >= INT_MAX
+- When else will return value overflow?
+  - max hex value for signed 32-bit integer: 0x7FFFFFFF
+  - return value is multiplied by 10 and summed with some value between (0 and 9)
+  - What values between 0 and 9 would cause an overflow?
