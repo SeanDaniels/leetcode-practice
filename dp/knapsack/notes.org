@@ -1,0 +1,15 @@
+#+TITLE: Knapsack Notes
+- empty bag
+- bag can hold max weight W
+- N items
+- each item has a value v, and weight w
+- example
+  W = 10
+  N = 5
+  weights = [3, 2, 8, 7, 4]
+  values = [2, 4, 6, 1, 9]
+
+  sum of all weights = 24
+  sum of all values = 22
+
+  greatest value < 10
