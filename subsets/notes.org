@@ -1,0 +1,41 @@
+#+TITLE: Subset Notes
+PrintAllSubsets(arr,0,n,subset,0);
+n = 4
+run 1: n = 4, i = 0, j = 0
+does i = n? no -> don't print
+call print again
+
+run 2: n = 4, i = 1, j = 0
+does i = n? no -> don't print
+call print again
+
+run 3: n = 4, i = 2, j = 0
+does i = n? no -> don't print
+call print again (run 4)
+>> return from run 4 <<
+subset[0] =
+
+run 4: n = 4, i = 3, j = 0
+does i = n? no -> don't print
+call print again
+>> return from run 5 <<
+subset[0] = arr[3], subset[0] = 4
+call print again
+>> return from run 6 <<
+<< return to run 3 >>
+
+run 5: n = 4, i = 4, j = 0
+does i = n? yes -> print
+idx = 0
+while(idx < 0){
+//empty set
+}
+return to run 4
+
+run 6: n = 4, i = 4; j = 1
+does i = n? yes -> print
+idx = 0
+while(idx < 1){
+print(subset[0]) // "4"
+}
+return to run 4
