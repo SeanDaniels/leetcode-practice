@@ -1,0 +1,9 @@
+#+TITLE: Bytecoins Notes
+* Table
+|  n | terms              | sum |
+|  0 | 0/2 + 0/3 + 0/4    |   0 |
+|  2 | 2/2 + 2/3 + 2/4    |   1 |
+| 18 | 18/2 + 18/3 + 18/4 |  19 |
+* Values increase when new multiple of 2, 3, or 4 is reached
+* If value is multiple of 4, value is increased by 2
+*
