@@ -4,12 +4,12 @@ using namespace std;
 class Solution{
     public:
         void getThreeSets(vector<int> &mainV, vector<int> &subV, vector<vector<int>> &resultV, int idx){
-            for(int i = idx; i < mainV.size(); i++){
+            for(int i = idx; i < int(mainV.size()); i++){
                 subV.push_back(mainV[i]);
                 if(subV.size()==3){
                     resultV.push_back(subV);
                 }
-                getThreeSets(mainV, subV, resultV, idx+1);
+                getThreeSets(mainV, subV, resultV, i+1);
                 subV.pop_back();
             }
         }
