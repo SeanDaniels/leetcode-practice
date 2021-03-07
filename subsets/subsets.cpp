@@ -5,7 +5,9 @@ using namespace std;
 void generateSubset(vector<int> &mainV, vector<vector<int>> &res, vector<int> &subV, int idx){
     for(int i=idx; i < mainV.size(); i++){
         subV.push_back(mainV[i]);
-        res.push_back(subV);
+        if(subV.size()==3){
+            res.push_back(subV);
+        }
         generateSubset(mainV, res, subV, i+1);
         subV.pop_back();
     }
